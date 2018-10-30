@@ -40,7 +40,7 @@ app.use('/api/plan', plan);
 app.use('/api/user', user);
 app.use('/api/session', userSession);
 
-// catch 404 and forward to error handler
+// catch 404 and forward to error handler..
 app.use(function (req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
@@ -49,7 +49,7 @@ app.use(function (req, res, next) {
 
 // error handler
 app.use(function (err, req, res, next) {
-  // set locals, only providing error in development....
+  // set locals, only providing error in development......
   res.locals.message = err.message;
   res.locals.error = req.app.get('env') === 'development' ? err : {};
 
